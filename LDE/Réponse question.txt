@@ -1,0 +1,33 @@
+Structure
+comment symbolisez-vous la notion de retour de variable(s) ?
+Grâce à l'instruction return
+
+est-ce qu'il y vraiment une action de récupération des variables heure et minute, en terme d'instruction du développeur ?
+Non
+
+pourquoi ne réalisez-vous que des tests et action sur la variable heure ? que faites-vous de la variable minute ?
+Désolé j'avais oublié de le faire.
+
+selon le CDC, est-ce que l'on vous demande d'afficher des valeurs en format BCD ?
+Oui
+
+Variables
+une variable 8bits, de quel type cela peut être ?!
+Uint 8 donc variable non-signé de 8 bit.
+
+mis à part les variables heure et minute, allez-vous déclarer d'autres variables dans votre code, si oui lesquelles ?
+Oui, dizaines, unité. bcdHeurs, bcdMinutes.
+
+Calculs
+pensez-vous que réaliser différents masquage sur la variable heure, vous permet de répondre rapidement à la demande du CDC ? si oui comment pouvez-vous le démontrer ? voyez-vous un autre moyen (peut-être plus mathématique) de répondre à la demande du CDC ?
+Oui on peut le faire mais se serai plus complèxe, j'ai utilisé une méthode plus simple qui est d'utiliser deux calcul l'une en divisant par 10 avoir un nombre entier dans la variable dizaine et de faire un modulo 10 pour avoir le reste de la division en entier mis dans la variable minutes
+
+comme indiqué dans le CDC, le but s'est de décomposer la notion de minute en dizaine et unité, comment faites-vous cela -> on ne le voit pas sur votre flow chart
+Utiliser deux calcul l'une en divisant par 10 avoir un nombre entier dans la variable dizaine et de faire un modulo 10 pour avoir le reste de la division en entier mis dans la variable minutes
+
+Appel sous-routine
+quels sont les paramètres que vous donnez à la sous-routine conversionBCD ?
+Les paramètres de ma sous-routine sont les variables dizaines et unité.
+
+comment récupérez-vous l'information de celle-ci ?!
+La valeur de sortie sera mise dans une variable nommé bcdHeurs et bcdMinutes.
